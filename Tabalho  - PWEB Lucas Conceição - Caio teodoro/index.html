@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/iziToast-master/dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="libs/ladda-bootstrap-master/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consa Academy</title>
+</head>
+
+<body class="body h-100 w-100">
+    <div class="container">
+        <div class="row h-100 w-100 align-items-center">
+            <div class="col-md-6 ">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" id="carousel_login">
+                            <div class="carousel-item active">
+                                <img src="img/spinning.jpg" class="d-block w-100" height="300" alt="Spinning">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5> Spinning </h5>
+                                    <p>forma de exercício com aulas focadas em resistência, força, intervalos, alta
+                                        intensidade e recuperação, e envolve o uso de uma bicicleta ergométrica
+                                        estacionária especial com volante em sala de aula. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hidroginastica.gif" class="d-block w-100" height="300"
+                                    alt="Hidroginastica">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Hidroginastica</h5>
+                                    <p>A hidroginástica é uma atividade corporal realizada em um ambiente aquático que
+                                        proporciona diversos benefícios físicos e para saúde.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/jiujitsu.gif" class="d-block w-100" height="300" alt="Jiujitsu">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5> Jiu-jitsu</h5>
+                                    <p>O jiu jitsu é uma arte marcial onde o guerreiro usa a sua força através de golpes
+                                        que envolvem as articulações, estrangulamentos, imobilizações, torções e
+                                        alavancas no corpo do adversário.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/musculação.jpg" class="d-block w-100" height="300" alt="Musculação">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5> Musculação </h5>
+                                    <p> forma de exercício contra resistência, praticado normalmente em ginásios, para o
+                                        treinamento e desenvolvimento dos músculos esqueléticos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-around">
+                <div>
+                    <div class="card caixa_card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="div_img">
+                                <img src="img/logo2.jpg" class="img-fluid img-logo"
+                                    alt="Lula ladrão, roubou meu coração">
+                            </div>
+                            <form style="margin-top: 15%;" action="dashboard.html">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Login</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Digite seu E-mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Senha </label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Digite sua senha" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-md btn-block ladda-button" data-style="expand-left" id="entrar">Entrar</button>
+                                </div>
+                                <div style="margin-top: 10%;">
+                                    <p> Não tem Acesso? Cadastre -se já<a href="#" data-toggle="modal"
+                                            data-target="#exampleModal"> Clique Aqui </a> </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastre -se Aqui!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Digite seu nome</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Seu email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                                ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <select class="form-control">
+                                <option>Select padrão</option>
+                              </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary ladda-button" data-spinner-color="blue" data-style="expand-left" data-dismiss="modal" id="salvar">
+                           <span class="ladda-spinner"></span>
+                           <div class="ladda-progress" style="width: 0px;"></div>
+                        Salvar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="libs/iziToast-master/dist/js/iziToast.min.js"></script>
+    <script src="libs/ladda-bootstrap-master/dist/spin.min.js"></script>
+    <script src="libs/ladda-bootstrap-master/dist/ladda.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
