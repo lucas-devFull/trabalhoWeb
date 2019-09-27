@@ -1,0 +1,58 @@
+.body{
+    background-image: url(../img/fundo_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: 100%;
+
+    display: flex;
+}
+
+.caixa_login{
+    margin-right: 10%;
+    margin-top: 6%;
+}
+
+.caixa_card {
+    width: 23rem !important;
+    height: 100%;
+    background-color: rgba(248, 249, 250, 0.48);
+}
+
+.img-logo{
+    border-radius: 100px;
+    width: 170px;
+    height: 170px;
+}
+
+.div_img{
+    text-align: center;
+}
+
+#carousel_login .carousel-caption {
+    background-color: rgba(33, 37, 41, 0.55);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+}
+
+.select2-container {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: .15s ease-in-out;
+    border-radius: .25rem;
+}
+
+.select2-container--default .select2-selection--single{
+    border: none;
+}
+
+.select2-selection:focus{
+    outline: none;
+}

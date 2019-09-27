@@ -1,0 +1,14 @@
+.body{
+    background-image: url(../img/contato_fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: 100%;
+
+    display: flex;
+}
+
+.caixa_container{
+    display: flex;
+    align-items: center;
+}

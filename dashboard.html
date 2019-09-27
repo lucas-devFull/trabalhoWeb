@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+        <ul class="nav navbar-light bg-dark">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Academia do Consa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Calculadora</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Meu Treino</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Contato</a>
+                </li>
+              </ul>
+
+    <div class="container mt-5">
+        <div class="card" style="width: 25%;">
+                <div class="card-header">
+                    Calcule seu IMC
+                </div>
+                <div class="X card-body">
+                    <div class="container">
+                        <div>
+                            <div>
+                                <label for="peso">Peso</label>
+                            </div>
+                            <input type="text" id="peso">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="altura" class="mt-1">Altura</label>
+                            </div>
+                            <input type="text" id="altura">
+                        </div>
+                        <div class="container">
+                            <button id="btn" class="btn btn-primary mt-2">Calcular IMC</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+// Entre 17 e 18,49	Abaixo do peso
+// Entre 18,5 e 24,99	Peso normal
+// Entre 25 e 29,99	Acima do peso
+// Entre 30 e 34,99	Obesidade I
+// Entre 35 e 39,99	Obesidade II (severa)
+// Acima de 40	Obesidade III (mórbida)
+
+<script>
+    $('#btn').click(function (params) {
+        
+    let peso = $('#peso').val();
+    let altura = $('#altura').val();
+    let imc = (peso.replace(',','.')) / (Math.pow(altura.replace(',','.'),2))
+    
+    console.log(imc);
+    })
+</script>
