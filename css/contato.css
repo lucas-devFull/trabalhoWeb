@@ -4,8 +4,8 @@
     background-size: cover;
     background-position-y: 100%;
     background-position-x: 100%;
-
     display: flex;
+    flex-direction: column;
 }
 
 .caixa_container{
@@ -25,7 +25,8 @@
 
 .caixa_pai{
     width: 100%;
-    height: 60%;
+    height: 100%;
+    margin-top: 10%;
     background-color: #00000082;
     padding: 20px;
     box-shadow: -10px 10px 30px black;
