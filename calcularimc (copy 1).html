@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/iziToast-master/dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="libs/ladda-bootstrap-master/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+        <ul class="nav navbar-light bg-dark">
+                <li class="nav-item">
+                  <a class="nav-link active" href="dashboard.html">Academia do Consa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="calcularimc.html">Calculadora</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="meutreino.html">Meu Treino</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="contato.html">Contato</a>
+                </li>
+              </ul>
+
+    <div class="m-5">
+        <div class="row justify-content-md-center mt-5">
+                <div class="card text-center text-light">
+                    <div class="card-header">
+                        Calcule seu IMC
+                    </div>
+                    <div class="X card-body">
+                        <div class="container">
+                            <div>
+                                <div>
+                                    <label for="peso">Peso</label>
+                                </div>
+                                <input type="text" id="peso">
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="altura" class="mt-1">Altura</label>
+                                </div>
+                                <input type="text" id="altura">
+                            </div>
+                            <div class="container text-center">
+                                <button id="btn" class="btn btn-primary mt-2">Calcular IMC</button>
+                                <p class="mt-2" id="result"></p>
+                                <p class="mt-2" id="result-imc"></p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="libs/iziToast-master/dist/js/iziToast.min.js"></script>
+<script src="libs/ladda-bootstrap-master/dist/spin.min.js"></script>
+<script src="libs/ladda-bootstrap-master/dist/ladda.min.js"></script>
+<script src="js/calculadora/calcular-imc.js"></script>
+</body>
+</html>
