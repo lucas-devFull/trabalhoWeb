@@ -12,3 +12,45 @@
     display: flex;
     align-items: center;
 }
+
+.caixa_contato{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-bottom-width: 0px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.caixa_pai{
+    width: 100%;
+    height: 60%;
+    background-color: #00000082;
+    padding: 20px;
+    box-shadow: -10px 10px 30px black;
+}
+
+#emailHelp{
+    color:white !important;
+}
+
+.numeroContato{
+    color: transparent;
+    cursor: pointer;
+}
+
+.msghover, .numeroContato:hover{
+    color: white !important;
+}
+.select2-container {
+
+}
+
+.select2-container--default .select2-selection--single{
+    border: none;
+}
+
+.select2-selection:focus{
+    outline: none;
+}

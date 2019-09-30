@@ -15,35 +15,46 @@
 </head>
 
 <body class="body h-100 w-100">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-6">
-                
+    <div class="container d-flex align-items-center">
+        <div class="row caixa_pai">
+            <div class="col-md-12" style="text-align: center; color: white;">
+              <h1> Fale conosco, Manda um zap do sorriso </h1>
             </div>
-            <div class="col-md-6">
-
+            <div class="col-md-12">
+              <div class="card caixa_contato" >
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> Digite seu nome </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                    </div>  
+                    <div class="form-group">
+                      <label for="exampleInputEmail1"> Digite seu E-mail </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Selecione o assunto </label>
+                      <select id="assuntos">
+                        <option value="0" selected disabled> Selecione uma opção </option>
+                        <option value="0"> Modos de treinamento </option>
+                        <option value="0"> Duvidas em relação ao IMC </option>
+                        <option value="0"> Pedir um personal especializado </option>
+                        <option value="0"> Outros </option>
+                      </select> 
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1"> Mensagem </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group " style="text-align: end;">
+                      <span class="numeroContato" > Se desejar manda um Zap para  14 996977685 </span>  
+                        <button type="submit" class="btn btn-primary msghover" id="btn_enviar">Enviar mensagem</button>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-
-            <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Endereço de email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-        </div>
-    </div>
+          </div>
+      </div>
+  </div>
 
     <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
@@ -51,7 +62,7 @@
     <script src="libs/iziToast-master/dist/js/iziToast.min.js"></script>
     <script src="libs/ladda-bootstrap-master/dist/spin.min.js"></script>
     <script src="libs/ladda-bootstrap-master/dist/ladda.min.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 
 </html>
